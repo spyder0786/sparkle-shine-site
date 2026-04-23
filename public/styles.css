@@ -71,8 +71,8 @@ ul { list-style: none; padding: 0; margin: 0; }
 .btn:active { transform: translateY(1px); }
 .btn-lg { padding: 16px 28px; font-size: 16px; }
 .btn-block { width: 100%; }
-.btn-primary { background: var(--ink); color: #fff; box-shadow: var(--shadow-md); }
-.btn-primary:hover { background: var(--violet-deep); transform: translateY(-2px); }
+.btn-primary { background: var(--ink); color: var(--yellow); box-shadow: var(--shadow-md); }
+.btn-primary:hover { background: var(--green-deep); color: #fff; transform: translateY(-2px); }
 .btn-outline { background: #fff; color: var(--ink); border: 2px solid var(--ink); }
 .btn-outline:hover { background: var(--yellow); }
 .btn-dark { background: var(--ink); color: var(--yellow); }
@@ -184,9 +184,9 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 /* Decorative blobs */
 .hero-blob { position: absolute; border-radius: 50%; filter: blur(40px); opacity: .55; pointer-events: none; }
-.blob-1 { width: 380px; height: 380px; background: var(--yellow); top: -120px; right: -80px; }
-.blob-2 { width: 320px; height: 320px; background: var(--pink); bottom: -120px; left: -100px; opacity: .35; }
-.blob-3 { width: 260px; height: 260px; background: var(--green); top: 40%; left: 35%; opacity: .25; }
+.blob-1 { width: 420px; height: 420px; background: var(--yellow); top: -140px; right: -90px; opacity: .7; }
+.blob-2 { width: 320px; height: 320px; background: var(--green); bottom: -120px; left: -100px; opacity: .35; }
+.blob-3 { width: 260px; height: 260px; background: var(--yellow-deep); top: 40%; left: 35%; opacity: .35; }
 
 /* Hero visual cards */
 .hero-visual { position: relative; min-height: 380px; }
@@ -222,8 +222,8 @@ ul { list-style: none; padding: 0; margin: 0; }
 .card-a { top: -20px; left: -10px; background: var(--yellow); animation-delay: 0s; }
 .card-b { bottom: 30px; right: -10px; background: var(--green); color: #fff; animation-delay: -1.6s; }
 .card-b .cf-sub { color: rgba(255,255,255,.85); }
-.card-c { bottom: -20px; left: 20px; background: var(--pink); color: #fff; animation-delay: -3s; }
-.card-c .cf-sub { color: rgba(255,255,255,.85); }
+.card-c { bottom: -20px; left: 20px; background: #fff; color: var(--ink); animation-delay: -3s; }
+.card-c .cf-sub { color: var(--muted); }
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
 @media (max-width: 600px) {
