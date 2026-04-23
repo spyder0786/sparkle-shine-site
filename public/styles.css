@@ -111,7 +111,10 @@ ul { list-style: none; padding: 0; margin: 0; }
 .logo-mark {
   display: inline-grid; place-items: center; width: 36px; height: 36px;
   background: var(--yellow); border-radius: 12px; font-size: 18px;
-  box-shadow: 0 4px 0 var(--ink);
+  box-shadow: 0 4px 0 var(--ink); overflow: hidden;
+}
+.logo-mark img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
 }
 .logo-accent { color: var(--pink-deep); }
 
