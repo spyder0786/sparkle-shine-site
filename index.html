@@ -3,24 +3,330 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>SparkleBox — Subscription Cleaning Service for Busy Homes</title>
+    <meta name="description" content="SparkleBox delivers reliable, eco-friendly home cleaning on a flexible weekly or monthly subscription. Book in 60 seconds." />
+    <meta name="author" content="SparkleBox" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="SparkleBox — Subscription Cleaning Service" />
+    <meta property="og:description" content="Reliable, eco-friendly home cleaning on a flexible subscription. Book in 60 seconds." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Lovable" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
-    <div id="root"></div>
+    <!-- Top promo bar -->
+    <div class="promo-bar">
+      <div class="container promo-inner">
+        <span>🎉 First clean 50% off — use code <strong>SPARKLE50</strong></span>
+        <span class="promo-meta">Free pickup of laundry on Pro plans</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo">
+          <span class="logo-mark">✨</span>
+          <span class="logo-text">Sparkle<span class="logo-accent">Box</span></span>
+        </a>
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="#how">How it works</a>
+          <a href="#plans">Plans</a>
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="header-cta">
+          <a href="#" class="btn btn-ghost">Sign in</a>
+          <a href="#plans" class="btn btn-primary">Book now</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+        <a href="#how">How it works</a>
+        <a href="#plans">Plans</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#plans" class="btn btn-primary btn-block">Book now</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-blob blob-1"></div>
+        <div class="hero-blob blob-2"></div>
+        <div class="hero-blob blob-3"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="pill">⚡ Same-day slots available</span>
+            <h1>A spotless home,<br/><span class="grad">on autopilot.</span></h1>
+            <p class="lead">Subscribe once. We handle the rest. Vetted pros, eco supplies, and prices that don't make you scrub your wallet.</p>
+            <div class="hero-actions">
+              <a href="#plans" class="btn btn-primary btn-lg">See plans →</a>
+              <a href="#how" class="btn btn-outline btn-lg">How it works</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>4.9★</strong><span>12k+ reviews</span></li>
+              <li><strong>60s</strong><span>to book</span></li>
+              <li><strong>100%</strong><span>satisfaction</span></li>
+            </ul>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card card-main">
+              <div class="hc-row">
+                <div class="hc-avatar">🧹</div>
+                <div>
+                  <div class="hc-title">Weekly Deep Clean</div>
+                  <div class="hc-sub">Tomorrow · 10:00 AM</div>
+                </div>
+                <span class="hc-badge">Confirmed</span>
+              </div>
+              <div class="hc-progress"><div class="hc-bar"></div></div>
+              <div class="hc-meta">
+                <span>👤 Maria R.</span>
+                <span>🏠 3 rooms · 2 baths</span>
+              </div>
+            </div>
+            <div class="hero-card card-float card-a">
+              <span class="emoji">🌿</span>
+              <div>
+                <div class="cf-title">Eco supplies</div>
+                <div class="cf-sub">Plant-based · Pet safe</div>
+              </div>
+            </div>
+            <div class="hero-card card-float card-b">
+              <span class="emoji">💸</span>
+              <div>
+                <div class="cf-title">Saved $48</div>
+                <div class="cf-sub">vs. one-off booking</div>
+              </div>
+            </div>
+            <div class="hero-card card-float card-c">
+              <span class="emoji">⭐</span>
+              <div>
+                <div class="cf-title">"Life-changing!"</div>
+                <div class="cf-sub">— Priya, Brooklyn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGO STRIP -->
+      <section class="logo-strip">
+        <div class="container">
+          <p class="strip-label">Featured in</p>
+          <div class="strip-row">
+            <span>FORBES</span><span>TechCrunch</span><span>WIRED</span><span>The Verge</span><span>Apartment Therapy</span><span>Bloomberg</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="eyebrow">How it works</span>
+            <h2>Three taps to a tidier life.</h2>
+            <p>No phone calls. No quotes. No awkward bargaining at the door.</p>
+          </header>
+          <div class="steps">
+            <article class="step step-yellow">
+              <div class="step-num">01</div>
+              <div class="step-icon">📅</div>
+              <h3>Pick your plan</h3>
+              <p>Weekly, biweekly, or monthly — pause or skip anytime, no questions.</p>
+            </article>
+            <article class="step step-pink">
+              <div class="step-num">02</div>
+              <div class="step-icon">🧽</div>
+              <h3>We match a pro</h3>
+              <p>Same trusted cleaner every visit. Background-checked & insured.</p>
+            </article>
+            <article class="step step-green">
+              <div class="step-num">03</div>
+              <div class="step-icon">✨</div>
+              <h3>Come home happy</h3>
+              <p>Photo-verified checklist delivered to your inbox after every clean.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section section-tint">
+        <div class="container">
+          <header class="section-head">
+            <span class="eyebrow">Services</span>
+            <h2>Everything sparkly. Nothing extra.</h2>
+          </header>
+          <div class="services-grid">
+            <article class="service-card"><div class="sc-icon">🛏️</div><h3>Bedrooms</h3><p>Sheets changed, surfaces dusted, floors vacuumed.</p></article>
+            <article class="service-card"><div class="sc-icon">🍳</div><h3>Kitchen</h3><p>Counters, appliances, sinks scrubbed and shined.</p></article>
+            <article class="service-card"><div class="sc-icon">🛁</div><h3>Bathrooms</h3><p>Tile, grout, mirrors and fixtures degreased and disinfected.</p></article>
+            <article class="service-card"><div class="sc-icon">🪟</div><h3>Windows</h3><p>Streak-free interior windows, sills and tracks.</p></article>
+            <article class="service-card"><div class="sc-icon">👕</div><h3>Laundry</h3><p>Wash, dry & fold add-on. Pickup on Pro plan.</p></article>
+            <article class="service-card"><div class="sc-icon">🐾</div><h3>Pet care</h3><p>Hair removal, lint rolls and pet-safe everything.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLANS -->
+      <section id="plans" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="eyebrow">Plans</span>
+            <h2>Subscribe & save up to 30%.</h2>
+            <div class="billing-toggle" role="tablist">
+              <button class="bt-btn is-active" data-billing="monthly" role="tab" aria-selected="true">Monthly</button>
+              <button class="bt-btn" data-billing="yearly" role="tab" aria-selected="false">Yearly · save 20%</button>
+            </div>
+          </header>
+          <div class="plans-grid">
+            <article class="plan plan-fresh">
+              <div class="plan-tag">Fresh</div>
+              <div class="plan-price"><span class="currency">$</span><span class="amount" data-monthly="89" data-yearly="71">89</span><span class="per">/visit</span></div>
+              <p class="plan-cadence">Every 4 weeks · cancel anytime</p>
+              <ul class="plan-list">
+                <li>✓ Up to 2 bedrooms</li>
+                <li>✓ Standard kitchen + bath</li>
+                <li>✓ Eco supplies included</li>
+                <li>✓ Photo checklist</li>
+              </ul>
+              <button class="btn btn-outline btn-block">Choose Fresh</button>
+            </article>
+            <article class="plan plan-glow popular">
+              <div class="popular-badge">⭐ Most loved</div>
+              <div class="plan-tag">Glow</div>
+              <div class="plan-price"><span class="currency">$</span><span class="amount" data-monthly="139" data-yearly="111">139</span><span class="per">/visit</span></div>
+              <p class="plan-cadence">Every 2 weeks · same pro</p>
+              <ul class="plan-list">
+                <li>✓ Up to 3 bedrooms · 2 baths</li>
+                <li>✓ Inside oven or fridge once/mo</li>
+                <li>✓ Window interiors</li>
+                <li>✓ Free reschedules</li>
+                <li>✓ Priority support</li>
+              </ul>
+              <button class="btn btn-primary btn-block">Choose Glow</button>
+            </article>
+            <article class="plan plan-pro">
+              <div class="plan-tag">Pro</div>
+              <div class="plan-price"><span class="currency">$</span><span class="amount" data-monthly="219" data-yearly="175">219</span><span class="per">/visit</span></div>
+              <p class="plan-cadence">Weekly · concierge add-ons</p>
+              <ul class="plan-list">
+                <li>✓ Unlimited rooms</li>
+                <li>✓ Laundry pickup & fold</li>
+                <li>✓ Fridge, oven, cabinets monthly</li>
+                <li>✓ Pantry restock add-on</li>
+                <li>✓ 24/7 concierge</li>
+              </ul>
+              <button class="btn btn-dark btn-block">Choose Pro</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section id="reviews" class="section section-dark">
+        <div class="container">
+          <header class="section-head section-head-light">
+            <span class="eyebrow eyebrow-light">Reviews</span>
+            <h2>People who never want to scrub again.</h2>
+          </header>
+          <div class="reviews-grid">
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>"I forgot what dust looked like. Maria is a wizard. Worth every penny."</p>
+              <footer><div class="r-avatar" style="background:#FFD166">P</div><div><strong>Priya S.</strong><span>Glow plan · Brooklyn</span></div></footer>
+            </article>
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>"Booked in 40 seconds, paused for vacation in two taps. The anti-Cable company."</p>
+              <footer><div class="r-avatar" style="background:#FF6B9D">J</div><div><strong>Jordan T.</strong><span>Fresh plan · Austin</span></div></footer>
+            </article>
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>"Pro plan replaced my cleaner, my laundry app, and my Sunday stress."</p>
+              <footer><div class="r-avatar" style="background:#06D6A0">A</div><div><strong>Amir K.</strong><span>Pro plan · Chicago</span></div></footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container faq-wrap">
+          <header class="section-head">
+            <span class="eyebrow">FAQ</span>
+            <h2>Quick answers.</h2>
+          </header>
+          <div class="faq-list">
+            <details class="faq-item"><summary>Can I pause or cancel anytime?<span class="caret">+</span></summary><p>Yes. No fees, no calls. Two taps in the app and you're done.</p></details>
+            <details class="faq-item"><summary>Do you bring supplies?<span class="caret">+</span></summary><p>Yep — plant-based, pet-safe products and equipment included on every visit.</p></details>
+            <details class="faq-item"><summary>Same cleaner every time?<span class="caret">+</span></summary><p>On Glow & Pro plans, yes. We match you with a pro you love and keep it that way.</p></details>
+            <details class="faq-item"><summary>What if I'm not happy?<span class="caret">+</span></summary><p>We'll re-clean for free within 24 hours, or refund the visit. That's the SparkleBox promise.</p></details>
+            <details class="faq-item"><summary>Which cities are covered?<span class="caret">+</span></summary><p>20+ metros across the US. Pop in your zip during checkout to confirm.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="container cta-inner">
+          <div>
+            <h2>Your weekend is calling.<br/>Don't pick up the mop.</h2>
+            <p>Start with 50% off your first clean. No contracts.</p>
+          </div>
+          <a href="#plans" class="btn btn-dark btn-lg">Claim my offer →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#" class="logo logo-footer">
+            <span class="logo-mark">✨</span>
+            <span class="logo-text">Sparkle<span class="logo-accent">Box</span></span>
+          </a>
+          <p class="footer-blurb">Cleaner homes. Calmer humans. Since 2021.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul><li><a href="#">About</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li></ul>
+        </div>
+        <div>
+          <h4>Service</h4>
+          <ul><li><a href="#plans">Plans</a></li><li><a href="#services">Services</a></li><li><a href="#faq">FAQ</a></li></ul>
+        </div>
+        <div>
+          <h4>Stay in the loop</h4>
+          <form class="newsletter" id="newsletter">
+            <input type="email" required placeholder="you@home.com" aria-label="Email" />
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+          <p class="footer-fine">Tips, deals, no spam. Promise.</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> SparkleBox, Inc.</span>
+        <span>Made with 🧼 + ☕ in NYC</span>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
