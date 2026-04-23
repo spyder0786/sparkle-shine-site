@@ -4,23 +4,25 @@
    ========================================================= */
 
 :root {
-  --bg: #FFF8E7;
+  --bg: #FFFDF2;
   --surface: #FFFFFF;
-  --ink: #1B1140;
-  --ink-soft: #4A3F6B;
-  --muted: #7A6F92;
-  --line: #EDE3F4;
+  --ink: #122A1B;
+  --ink-soft: #2F4A36;
+  --muted: #6B7F70;
+  --line: #E6EFE6;
 
-  --yellow: #FFD23F;
+  --yellow: #FFD60A;
   --yellow-deep: #F4B400;
-  --pink: #FF5C8A;
-  --pink-deep: #E63E73;
-  --green: #1FC16B;
-  --green-deep: #0BA85A;
-  --violet: #7C5CFF;
-  --violet-deep: #5A3FE0;
-  --orange: #FF8A3D;
-  --sky: #4FC3F7;
+  --yellow-soft: #FFF3B0;
+  --green: #1FA463;
+  --green-deep: #0E7A45;
+  --green-soft: #D6F1DE;
+  --pink: #1FA463;        /* legacy alias -> green */
+  --pink-deep: #0E7A45;   /* legacy alias -> green-deep */
+  --violet: #122A1B;      /* legacy alias -> ink */
+  --violet-deep: #0B1C12; /* legacy alias -> ink-darker */
+  --orange: #FFD60A;      /* legacy alias -> yellow */
+  --sky: #1FA463;         /* legacy alias -> green */
 
   --radius-sm: 12px;
   --radius: 20px;
